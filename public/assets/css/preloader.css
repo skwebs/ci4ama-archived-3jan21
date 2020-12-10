@@ -1,0 +1,32 @@
+
+.preloader{
+	position:fixed;
+	top:0;bottom:0;left:0;right:0;
+	z-index:9999;
+	background: #fff;
+	display:flex;
+	filter:grayscale(100%);
+	justify-content: center;
+	align-items:center;
+}
+.preloader__img{
+	box-shadow:0 0 5px 5px #eee;
+	max-width:128px;
+	opacity:.1;
+	z-index:2;
+}
+
+.preloader .rounder{
+position:fixed;
+background:transparent;
+width:150px;
+height:150px;
+border:5px dotted #ddd;
+border-bottom-color:#fff;
+border-radius:50%;
+animation:rotate 1.75s linear infinite;
+}
+@keyframes rotate{
+0%{transform:rotate(0);}
+100%{transform:rotate(360deg);}
+}

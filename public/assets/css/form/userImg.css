@@ -1,0 +1,91 @@
+/* user image preview */
+.userImgSec {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	display: block;
+	overflow: hidden;
+}
+
+#user-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+	height: 100%;
+}
+
+.userImgSec .userImgSec-toolBox {
+	position: absolute;
+	bottom: -0px;
+	left: 0;
+	width: 200px;
+	height: 50px;
+	background: rgba(0,0,0,.5);
+	z-index: 1;
+	transition: .3s;
+	display: flex;
+}
+
+.userImgSec:hover .userImgSec-toolBox {
+	ransform: translateY(0);
+	bottom: 0;
+}
+
+.userImgSec .userImgSec-toolBox .userImgSec-toolBtn {
+	position: relative;
+	flex-grow: 1;
+	height: 100%;
+	background: transparent;
+	border: none;
+	color: #fff;
+}
+
+.userImgSec .userImgSec-toolBox .userImgSec-toolBtn .fa {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+
+.userImgSec .userImgSec-toolBox .userImgSec-toolBtn span {
+	position: absolute;
+	bottom: 15%;
+	font-size: .5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+
+.userImgSec .userImgSec-toolBox button:active {
+	background: #000;
+	outline: none;
+}
+
+.userImgSec .userImgSec-toolBox button:hover {
+	outline: none;
+}
+
+#cropImageModal .cropBox, 
+.cropBox img {
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+#cropImageModal {
+	visibility: hidden;
+}
+
+#cropImageModal  .modal-content {
+	width: 360px !important;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}

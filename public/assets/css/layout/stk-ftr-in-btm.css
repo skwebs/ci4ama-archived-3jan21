@@ -1,0 +1,66 @@
+	* {
+	margin: 0;
+	padding: 0;
+	}
+	
+	html,body {
+	height: 100%;
+	}
+	
+	body {
+	display: flex !important;
+	flex-direction: column !important;
+	}
+	
+	/*main {
+	/* By setting flex-grow to 1, the main content will take up 
+	all of the remaining space on the page (the other elements have flex-grow: 0 and won't contest the free space). */
+	/* 1 flex-grow, 0 flex-shrink, auto flex-basis *
+	flex: 1 0 auto !important;
+	}
+	
+	header,footer {
+	/* We want the header to have a static height - it will always take up just as much space as it needs.  */
+	/* 0 flex-grow, 0 flex-shrink, auto flex-basis *
+	flex: 0 0 auto !important;
+	}
+	*/
+	
+	header,main,footer {
+	overflow-x:hidden;
+	overflow-y:auto;
+	/*flex: flex-grow, flex-shrink, flex-basic;*/
+	/*
+	set flex-grow: 1; for main only and flex-grow:0; for header and footer
+	flex-shrink :0; and flex-basic: auto; for header, footer and, main
+	*/
+	flex: 0 0 auto;
+	}
+	main{flex-grow:1 !important;}
+	.cta {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), 50%), url("https://anshumemorial.in/test/m/assets/img/web/laptop1.jpg") fixed center 100%/cover
+	}
+	
+	.btn.btn-grad-blue{
+	background: linear-gradient(119.54deg, #000046 0%, #1CB5E0 100%);
+	background: -webkit-linear-gradient(119.54deg, #1CB5E0, #000046);
+	color:#fff;
+	}
+	.btn.btn-grad-blue:hover, 
+	.btn.btn-grad-blue:active, 
+	.btn.btn-grad-blue:focus{
+	background: linear-gradient(119.54deg, #000046 10%, #1CB5E0 60%);
+	background: -webkit-linear gradient(119.54deg, #1CB5E0, #000046);
+	}
+	.bg-grad-blue{
+	background: linear-gradient(119.54deg, #000046 10%, #1CB5E0 60%);
+	background: -webkit-linear gradient(119.54deg, #1CB5E0, #000046);
+	}
+	.copyright{
+	background:rgba(0,0,0,0.1);}
+	
+	.box .card{
+	width:100%;
+	max-width:600px;
+	}
+	

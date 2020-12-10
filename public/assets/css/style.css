@@ -1,0 +1,96 @@
+:root{
+--darkblue: #1a237e;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: panton_regular;
+}
+.bg-black-op05 {
+  background: rgba(0, 0, 0, 0.75);
+}
+.bg-white-op05 {
+  background: hsla(0, 0%, 100%, 0.75);
+}
+@media (min-width: 768) {
+  .w-md-25 {
+    width: 25% !important;
+  }
+  .small-md{
+	  font-size: 0.875em;
+  }
+}
+.panton-r {
+  font-family: panton_regular;
+}
+.panton-sb {
+  font-family: panton_semibold;
+}
+.panton-b {
+  font-family: panton_bold;
+}
+.panton-eb {
+  font-family: panton_extrabold;
+}
+.text-indigo {
+  color: var(--bs-indigo);
+}
+.text-purple {
+  color: var(--bs-purple);
+}
+.text-orange {
+  color: var(--bs-orange);
+}
+.text-teal {
+  color: var(--bs-teal);
+}
+.text-pink {
+  color: var(--bs-pink);
+}
+.text-darkblue{color:var(--bs-darkblue);}
+.bg-indigo {
+  background-color: var(--bs-indigo);
+}
+.bg-purple {
+  background-color: var(--bs-purple);
+}
+.bg-orange {
+  background-color: var(--bs-orange);
+}
+.bg-teal {
+  background-color: var(--bs-teal);
+}
+.bg-pink {
+  background-color: var(--bs-pink);
+}
+.bg-darkblue{background:var(--bs-darkblue);}
+ .purple-grad {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#fff),
+    to(#9ebfde)
+  );
+  background: linear-gradient(to right bottom, #fff, #9ebfde);
+}
+.filter-gray{filter:grayscale(100%);}
+.opacity25{opacity:0.25;}
+.vis-hid{visibility:hidden;}
+.vis-vis{visibility:visible;}
+/* height */
+.vh-100{height:100vh;}
+.vh-75{height:75vh;}
+
+.text-justify {
+  text-align: justify !important;
+}
+.bg-darkblue{background:#1a237e;}
+.text-darkblue{color:#1a237e;}

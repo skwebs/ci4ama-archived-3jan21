@@ -1,0 +1,199 @@
+:root {
+	--small-font: .75rem;
+}
+
+/*===========================================
+Form Floating Label
+.form-float
+=============================================*/
+
+.form-group {
+	position: relative;
+}
+
+.form-float .form-control, 
+.form-float .form-select {
+	border: 1px solid #ced4da;
+	z-index: 1;
+}
+
+.form-float .form-control ~ label,
+.form-float .form-select ~ label{
+	position: absolute;
+	top: .7rem;
+	color: #777;
+	transition: .3s;
+	line-height: 1;
+}
+.form-float .form-control.form-control-sm ~ label,
+.form-float .form-select.form-select-sm ~ label{
+	top: .45rem;
+}
+.form-float .form-control.form-control-lg ~ label,
+.form-float .form-select.form-select-lg ~ label{
+	top: 1rem;
+}
+.form-float .form-control:focus ~ label,
+.form-float .form-select:focus ~ label {
+	color: var(--bs-primary);
+}
+
+.form-float .form-control:focus ~ label ,
+.form-float .form-control:not(:placeholder-shown):not(:focus) ~ label,
+.form-float .form-select:valid ~ label {
+	top: -.5rem;
+	font-size: var(--small-font);
+	z-index: 1;
+	color:#000;
+}
+
+/*===========================================
+.form-float.form-foat-box
+=============================================*/
+
+.form-float.form-float-box .form-control ~ label,
+.form-float.form-float-box .form-select ~ label{
+	left: .5rem;
+	padding-left: 0.25rem;
+	padding-right:.5rem;
+	background:#fff;
+}
+.form-float.form-float-box .form-control-sm ~ label,
+.form-float.form-float-box .form-select-sm ~ label{
+	left: .25rem;
+	padding-left: 0.25rem;
+	padding-right:.5rem;
+	background:#fff;
+}
+.form-float.form-float-box .form-control-lg ~ label,
+.form-float.form-float-box .form-select-lg ~ label{
+	left: .75rem;
+	padding-left: 0.25rem;
+	padding-right:.5rem;
+	background:#fff;
+}
+/*===========================================
+.form-float.form-foat-ul
+=============================================*/
+.form-float.form-float-ul .form-control ~ label,
+.form-float.form-float-ul .form-select ~ label{
+	left: 0;
+	background:none;
+}
+
+
+
+/* general */
+
+
+.form-control:focus,
+.form-select:focus,
+.was-validated.form-control:focus ,
+.was-validated.form-select:focus,
+.form-control.is-valid:focus ,
+.form-select.is-valid:focus {
+	border-width: 1px;
+}
+
+	/* validation css */
+	/* input */
+.form-float.was-validated .form-control:valid:not(:placeholder-shown) ~ label,
+.form-float.was-validated .form-control:valid:focus:placeholder-shown ~ label,
+.form-float .form-control.is-valid:valid:not(:placeholder-shown) ~ label,
+.form-float .form-control.is-valid:valid:focus:placeholder-shown ~ label {
+	color: var(--bs-success);
+	border-width: 1.2px;
+}
+
+.form-float.was-validated .form-control:invalid:not(:placeholder-shown) ~ label,
+.form-float.was-validated .form-control:invalid:focus:placeholder-shown ~ label,
+.form-float .form-control.is-invalid:invalid:not(:placeholder-shown) ~ label,
+.form-float .form-control.is-invalid:invalid:focus:placeholder-shown ~ label {
+	color: var(--bs-danger);
+}
+	
+	
+	/* select */
+.form-float.was-validated .form-select:valid ~ label,
+.form-float .form-select.is-valid:valid ~ label {
+	color: var(--bs-success);
+ /*#777;*/
+}
+
+.form-float .form-select:focus ~ label {
+	color: var(--bs-primary);
+}
+
+
+
+
+
+
+/*===========================================
+form-float-underline Floating Label
+=============================================*/
+
+
+    /* form-float-underline */
+    .form-float.form-float-ul .form-control ,
+    .form-float.form-float-ul .form-select {
+    border: none !important;
+    border-radius:0;
+    border-bottom: 1px solid silver !important;
+    }
+    .form-float.form-float-ul .form-control ~ .form-float-underline,
+    .form-float.form-float-ul .form-select ~ .form-float-underline{
+    position: absolute;
+    height: 1.2px;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    }
+    .form-float.form-float-ul .form-control:focus ~ .form-float-underline,
+    .form-float.form-float-ul .form-select:focus ~ .form-float-underline{
+    height: 1.5px !important;
+    }
+    .form-float.form-float-ul .form-control ~ .form-float-underline:before,
+    .form-float.form-float-ul .form-select ~ .form-float-underline:before{
+    position: absolute;
+    left:0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    }
+    .form-float.form-float-ul .form-control:not(:placeholder-shown):not(:focus) ~ .form-float-underline:before,
+    .form-float.form-float-ul .form-control:focus ~ .form-float-underline:before{
+    transform: scaleX(1);
+    background:var(--bs-purple);
+    }
+    /*.form-float.form-float-ul .form-select:focus ~ .form-float-underline:before,*/
+    .form-float.form-float-ul .form-select:valid ~ .form-float-underline:before{
+    transform: scaleX(1);
+    background:var(--bs-purple);
+    }
+    /*.form-float.form-float-ul .form-control:invalid ~ .form-float-underline:before{
+    background:var(--bs-danger);
+    }
+    .form-float.form-float-ul .form-control:valid ~ .form-float-underline:before{
+    background:var(--bs-success);
+    }*/
+    
+
+    
+    
+    
+    .form-control:required ~ label:after,
+    .form-select:required ~ label:after{
+    content:"*";
+    position:relative;
+    color:var(--bs-danger);
+    transform:scale(1.2)translateX(.2rem); 
+    display:inline-block;
+    font-style:normal;
+    }
+    
+    

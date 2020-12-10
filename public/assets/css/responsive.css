@@ -1,0 +1,119 @@
+/* Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)*/
+/* (sm)+ */
+@media (min-width: 576px) { 
+
+}
+
+/*/ Medium devices (tablets, 768px and up)*/
+/* (md)+ */
+@media (min-width: 768px) { 
+	.navbar-brand{
+	height:23px !important;
+	}
+	.navbar-brand img {
+	  height:50px;
+	}
+
+}
+
+/*/ Large devices (desktops, 992px and up)*/
+/* (lg)+ */
+@media (min-width: 992px) { 
+
+
+}
+
+/*/ Extra large devices (large desktops, 1200px and up)*/
+/* (xl)+ */
+@media (min-width: 1200px) { 
+
+}
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* less than (xs) 576px */
+@media (max-width: 575.98px) { 
+
+}
+
+/*/ Small devices (landscape phones, less than 768px)*/
+/* less than (sm) 768px */
+@media (max-width: 767.98px) { 
+	.navbar-brand{
+	height:60px;
+	}
+	.navbar-brand img {
+	  height:100%;
+	}
+	
+	.school-name {
+		font-size: 1.65rem;
+	}
+	
+	.school-details {
+		font-size: .9rem;
+	}
+	
+	.school-add {
+		font-size: .95rem;
+	}
+}
+
+/*/ Medium devices (tablets, less than 992px)*/
+/* less than (md) 992px */
+@media (max-width: 991.98px) { 
+
+}
+
+/*/ Large devices (desktops, less than 1200px)*/
+/* less than (xl) 1200px */
+@media (max-width: 1199.98px) { 
+
+}
+
+/*/ Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+*/
+
+
+
+
+
+
+
+
+/*/ Extra small devices (portrait phones, less than 576px)
+/* less than xs*/
+@media (max-width: 575.98px) { 
+
+}
+
+/*/ Small devices (landscape phones, 576px and up)
+/* xs - sm */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+}
+
+/*/ Medium devices (tablets, 768px and up)
+/* sm - md */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/*/ Large devices (desktops, 992px and up)
+/* md - lg */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/*/ Extra large devices (large desktops, 1200px and up)
+/* lg - xl */
+@media (min-width: 1200px) { 
+
+}
